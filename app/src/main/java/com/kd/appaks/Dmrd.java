@@ -14,7 +14,7 @@ public class Dmrd {
 
     public Dmrd(String gh, String zwx) {
         this.gh = "光合:"+gh+"W/㎡";
-        this.zwx = "紫外:"+zwx+"W/㎡";
+        this.zwx = "紫外:"+zwx+"mW/㎡";
     }
 
     @Override
