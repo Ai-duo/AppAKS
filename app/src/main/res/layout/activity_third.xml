@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="co2"
+            type="String" />
+
+        <variable
+            name="dmrd"
+            type="com.kd.appaks.Dmrd" />
+
+        <variable
+            name="oxy"
+            type="String" />
+
+        <variable
+            name="tf"
+            type="android.graphics.Typeface" />
+    </data>
+
+    <LinearLayout
+
+        android:layout_width="256px"
+        android:layout_height="108px"
+        android:background="#000"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView android:paddingLeft="5px"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@{dmrd.zwx}"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/firstTextSize"
+                    app:setExtraTypeface="@{tf}" />
+
+                <TextView
+                    android:paddingLeft="5px"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@{dmrd.gh}"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/firstTextSize"
+                    app:setExtraTypeface="@{tf}" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/firstTextSize"
+
+                    app:setExtraTypeface="@{tf}" />
+                <TextView
+                    android:paddingLeft="5px"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@{`CO2:`+co2+`ppm`}"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/firstTextSize"
+                    app:setExtraTypeface="@{tf}" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:paddingLeft="5px"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@{`负氧离子:`+oxy+`个/cm3`}"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/firstTextSize"
+            app:setExtraTypeface="@{tf}" />
+
+    </LinearLayout>
+</layout>

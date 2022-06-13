@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+       <variable
+           name="dmgd"
+           type="com.kd.appaks.Dmgd" />
+
+        <variable
+            name="dm4d"
+            type="String" />
+        <variable
+            name="tf"
+            type="android.graphics.Typeface" />
+    </data>
+
+    <LinearLayout
+        android:background="#000"
+        android:orientation="horizontal"
+        android:layout_width="256px"
+        android:layout_height="108px">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                app:setExtraTypeface="@{tf}"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:textSize="@dimen/firstTextSize"
+                android:text="@{dmgd.wd}"
+
+                android:textColor="@color/textColor"/>
+            <TextView
+                app:setExtraTypeface="@{tf}"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:textSize="@dimen/firstTextSize"
+                android:text="@{dmgd.fs}"
+                android:textColor="@color/textColor"/>
+            <TextView
+                app:setExtraTypeface="@{tf}"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:textSize="@dimen/firstTextSize"
+                android:text="@{dmgd.yl}"
+                android:textColor="@color/textColor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                app:setExtraTypeface="@{tf}"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:textSize="@dimen/firstTextSize"
+                android:text="@{dmgd.sd}"
+                android:textColor="@color/textColor"/>
+            <TextView
+                app:setExtraTypeface="@{tf}"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:textSize="@dimen/firstTextSize"
+                android:text="@{dmgd.fx}"
+                android:textColor="@color/textColor"/>
+            <TextView
+                app:setExtraTypeface="@{tf}"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:textSize="@dimen/firstTextSize"
+                android:text="@{dmgd.qy}"
+                android:textColor="@color/textColor"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
