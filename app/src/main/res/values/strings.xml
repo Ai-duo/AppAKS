@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">AppAKS</string>
     <dimen name="titleSize">15px</dimen>
-    <dimen name="firstTextSize">17px</dimen>
+    <dimen name="firstTextSize">16px</dimen>
     <dimen name="secondTextSize">8px</dimen>
-    <dimen name="thirdTextSize">10px</dimen>
+    <dimen name="thirdTextSize">15px</dimen>
     <color name="textColor">#f00</color>
 </resources>

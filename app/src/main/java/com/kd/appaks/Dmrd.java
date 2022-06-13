@@ -6,15 +6,15 @@ public class Dmrd {
     public String zfs,rzh,gh,zwx;
 
     public Dmrd(String zfs, String rzh, String gh) {
-        this.zfs = "总辐射:"+zfs+"W²/m³";
+        this.zfs = "总辐射:"+zfs+"W/㎡";
         this.rzh = "小时日照:"+rzh+"min";
-        this.gh = "光合:"+gh+"W²/m³";
+        this.gh = "光合:"+gh+"W/㎡";
         Log.i("TAG",toString());
     }
 
     public Dmrd(String gh, String zwx) {
-        this.gh = "光合:"+gh+"W²/m³";
-        this.zwx = "紫外:"+zwx+"W²/m³";
+        this.gh = "光合:"+gh+"W/㎡";
+        this.zwx = "紫外:"+zwx+"W/㎡";
     }
 
     @Override
